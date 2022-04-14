@@ -1,9 +1,10 @@
 body{
     background: rgb(247, 215, 173);
-    margin-top: 20px;
+    margin-top: 120px;
 }
 
 #chess{
+    
 width: 500px;
 height: 500px;
 border: 12px groove chocolate;
