@@ -1,3 +1,8 @@
+body{
+    background: rgb(247, 215, 173);
+    margin-top: 20px;
+}
+
 #chess{
 width: 300px;
 height: 300px;
@@ -7,3 +12,9 @@ display: grid;
 grid-template-columns: repeat(8, 1fr);
 }
 
+p{
+    font-family: sans-serif;
+    font-size: smaller;
+    position: absolute;
+    bottom: 50px;
+}
