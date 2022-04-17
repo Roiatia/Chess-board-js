@@ -1,3 +1,4 @@
+
 let chessboard = document.getElementById('chessboard');
 let space = 1;
 for (let row = 0; row < 8; row++) {
@@ -54,9 +55,10 @@ function setPieceData (el, color, type) {
 
 function resetBoard () {
   initialPieces.forEach(function(piece) {
-    var pieceEl = document.querySelector('td[data-position="' + piece.position + '"]');
+    let pieceEl = document.querySelector('td[data-position="' + piece.position + '"]');
     setPieceData(pieceEl, piece.color, piece.type);
   });
 };
 
 resetBoard();
+
