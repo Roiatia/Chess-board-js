@@ -1,15 +1,26 @@
 
 let chessboard = document.getElementById('chessboard');
 let space = 1;
+let selectedCell;
+
 for (let row = 0; row < 8; row++) {
   let rowEl = document.createElement('tr');
-  for (let cell = 0; cell < 8; cell++) { 
+  for (let cell = 0; cell < 8; cell++) {
     let cellEl = document.createElement('td');
-    cellEl.dataset.position = space; 
+    cellEl.dataset.position = space;
     rowEl.appendChild(cellEl);
-    space++; 
+    space++;
   }
   chessboard.appendChild(rowEl);
+}
+
+function onCellClick(e) {
+  console.log(e.currentTarget);
+  if (selectedCell !== undefined) {
+    selectedCell.classList.remove('selected');
+  }
+selectedCell = e.currentTarget;
+selectedCell.classList.add('selected')
 }
 
 let initialPieces = [
@@ -46,15 +57,16 @@ let initialPieces = [
   { position: 63, color: 'white', type: 'knight' },
   { position: 64, color: 'white', type: 'rook' },
 ];
+cell.addEventListner('click', onclick);
 
-function setPieceData (el, color, type) {
-  el.classname = ''; 
+function setPieceData(el, color, type) {
+  el.classname = '';
   el.classList.add(color);
-  el.classList.add(type); 
+  el.classList.add(type);
 }
 
-function resetBoard () {
-  initialPieces.forEach(function(piece) {
+function resetBoard() {
+  initialPieces.forEach(function (piece) {
     let pieceEl = document.querySelector('td[data-position="' + piece.position + '"]');
     setPieceData(pieceEl, piece.color, piece.type);
   });
