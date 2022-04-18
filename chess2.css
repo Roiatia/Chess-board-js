@@ -1,9 +1,8 @@
-body{
+body {
   background: rgb(250, 231, 187);
-
 }
 
-h1{
+h1 {
 font-size: 25px;
 font-family: sans-serif;
 align-content: center;
@@ -19,18 +18,22 @@ left: 750px;
     border-collapse: collapse;
     
   }
+
   #chessboard tr td {
     background: white;
     width: 85px;
     height: 85px;
    
   }
+
   #chessboard tr:nth-child(2n) td:nth-child(2n+1) {
     background: #9f9f9f;
   }
+
   #chessboard tr:nth-child(2n+1) td:nth-child(2n) {
     background: #9f9f9f;
   }
+
   #chessboard .king.black:after {
     content: "\265A";
     font-size: 50px;
@@ -38,6 +41,7 @@ left: 750px;
     line-height: 30px;
     align-items: center;
   }
+
   #chessboard .king.white:after {
     content: "\2654";
     font-size: 50px;
@@ -45,6 +49,7 @@ left: 750px;
     line-height: 30px;
     align-items: center;
   }
+
   #chessboard .queen.black:after {
     content: "\265B";
     font-size: 50px;
@@ -52,6 +57,7 @@ left: 750px;
     line-height: 30px;
     align-items: center;
   }
+
   #chessboard .queen.white:after {
     content: "\2655";
     font-size: 50px;
@@ -59,6 +65,7 @@ left: 750px;
     line-height: 30px;
     align-items: center;
   }
+
   #chessboard .rook.black:after {
     content: "\265C";
     font-size: 50px;
@@ -66,6 +73,7 @@ left: 750px;
     line-height: 30px;
     align-items: center;
   }
+
   #chessboard .rook.white:after {
     content: "\2656";
     font-size: 50px;
@@ -73,6 +81,7 @@ left: 750px;
     line-height: 30px;
     align-items: center;
   }
+
   #chessboard .bishop.black:after {
     content: "\265D";
     font-size: 50px;
@@ -80,6 +89,7 @@ left: 750px;
     line-height: 30px;
     align-items: center;
   }
+
   #chessboard .bishop.white:after {
     content: "\2657";
     font-size: 50px;
@@ -87,6 +97,7 @@ left: 750px;
     line-height: 30px;
     align-items: center;
   }
+
   #chessboard .knight.black:after {
     content: "\265E";
     font-size: 50px;
@@ -94,6 +105,7 @@ left: 750px;
     line-height: 30px;
     align-items: center;
   }
+
   #chessboard .knight.white:after {
     content: "\2658";
     font-size: 50px;
@@ -101,6 +113,7 @@ left: 750px;
     line-height: 30px;
     align-items: center;
   }
+
   #chessboard .pawn.black:after {
     content: "\265F";
     font-size: 50px;
@@ -108,6 +121,7 @@ left: 750px;
     line-height: 30px;
     align-items: center;
   }
+  
   #chessboard .pawn.white:after {
     content: "\2659";
     font-size: 50px;
