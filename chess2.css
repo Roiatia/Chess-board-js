@@ -2,6 +2,15 @@ body{
   background: rgb(250, 231, 187);
 
 }
+
+h1{
+font-size: 25px;
+font-family: sans-serif;
+align-content: center;
+position: relative;
+left: 750px;
+}
+
 #chessboard {
     padding: 0px;
     padding-top: 20px;
@@ -107,6 +116,9 @@ body{
     align-items: center;
   }
  
+  .selectedCell{
+    background: rgb(197,197,83);
+  }
   
   p{
     font-family: sans-serif ;

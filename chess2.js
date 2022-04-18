@@ -12,6 +12,8 @@ for (let row = 0; row < 8; row++) {
     space++;
   }
   chessboard.appendChild(rowEl);
+  cell.addEventListner('click', onCellclick);
+
 }
 
 function onCellClick(e) {
@@ -19,8 +21,8 @@ function onCellClick(e) {
   if (selectedCell !== undefined) {
     selectedCell.classList.remove('selected');
   }
-selectedCell = e.currentTarget;
-selectedCell.classList.add('selected')
+  selectedCell = e.currentTarget;
+  selectedCell.classList.add('selected');
 }
 
 let initialPieces = [
@@ -57,7 +59,6 @@ let initialPieces = [
   { position: 63, color: 'white', type: 'knight' },
   { position: 64, color: 'white', type: 'rook' },
 ];
-cell.addEventListner('click', onclick);
 
 function setPieceData(el, color, type) {
   el.classname = '';
